@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kesukaan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .content {
+            display: none;
+        }
+
+        /* Styling untuk h2 */
+        h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">wisnu's world-233307059</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="intro.html">intro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="like.html">kesukaan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="unlike.html">tidak suka</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="summary.html">kesimpulan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container text-center">
+        <h2>apa ya? hal-hal yg weh suka..
+            mungkin kaya.. </h2>
+        <div class="item">
+            <button class="btn btn-dark toggle">1. Wishlist dalam hidup</button>
+            <div class="content">
+                <ul>
+                    <li>hujan+pasar : jalan-jalan</li>
+                    <li>hujan+kereta+baca buku</li>
+                    <li>pasir pantai+sunset</li>
+                </ul>
+            </div>
+        </div>
+        <div class="item">
+            <button class="btn btn-dark toggle">2. Lagu kesukaan</button>
+            <div class="content">
+                <ul>
+                    <li>what a wonderful world</li>-<br>
+                    <li>bad</li>
+                    <audio controls muted>
+                        <source src="audio/wave to earth - bad.mp3" type="audio/mpeg">
+                    </audio>
+                    <li>cinta begini</li>
+                    <audio controls muted>
+                        <source src="audio/OKAAY, Adrian Khalif - Cinta Begini.mp3" type="audio/mpeg">
+                    </audio>
+                    <li>sialan</li>
+                    <audio controls muted>
+                        <source src="audio/Adrian Khalif, Juicy Luicy - Sialan.mp3" type="audio/mpeg">
+                    </audio>
+                    <li>egomu</li>
+                    <audio controls muted>
+                        <source src="audio/Pay, Ipang - Egomu.mp3" type="audio/mpeg">
+                    </audio>
+                    <li>sholawat nariyah</li>-
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container text-center">
+    <div class="item">
+        <button class="btn btn-dark toggle">3. hobi</button>
+        <div class="content">
+            -seneng nolong orang<br>
+                    -music 24/7<br>
+                    -self-love<br>
+                    -suka puisi sm baca buku<br>
+                    -iseng bikin lagu<br>
+                    -seneng lari<br>
+                    -protein lovers<br>
+                    -love gitar<br>
+                    -no porn<br>
+                    -suka pussssssss<br>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="container text-center">
+    <div class="item">
+        <button class="btn btn-dark toggle">4. makanan kesukaan</button>
+        <div class="content">
+            apa y, suka lupa kalo mau nyebut<br>
+            mungkin ayam bakar si, trs bakwan sii, lalu ikan belut sii.. pernah sekali doang makan.
+        <br>
+        minumnnya jus alpukat, atau buah naga, jus jambu boleh juga. apalagi squash..^^
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="container text-center">
+    <div class="item">
+        <button class="btn btn-dark toggle">5. cewe greenflag</button>
+        <div class="content">
+                wisnu ga punya standar sii. tapi gampang goblog kalo udah falling in love.<br>
+                jadi, pengennya si perempuan (bukan cewe) yang gak bikin goblog.
+        </div>
+    </div>
+    </div>
+</div>
+    <script>
+        document.querySelectorAll('.toggle').forEach(item => {
+            item.addEventListener('click', event => {
+                const content = item.nextElementSibling;
+                content.style.display = content.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+    </script>
+    </div>
+</div>
+</div>
+</body>
+
+</html>

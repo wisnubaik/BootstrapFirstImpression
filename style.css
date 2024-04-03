@@ -1,0 +1,19 @@
+.banner {
+    background: url("https://wallpapercave.com/wp/wp8626218.png") no-repeat center center;
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: aliceblue;
+}
+.banner h4,
+.banner h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 70px;
+.banner h4 {
+        position: absolute; /* Tetapkan posisi absolut */
+        bottom: 50px; /* Posisikan di bagian bawah */
+        left: 0; /* Posisikan di sisi kiri */
+        margin-bottom: 0; /* Hilangkan margin bawah agar tidak ada jarak tambahan */
+        color: rgba(255, 255, 0, 0.224);
+    }
+}
